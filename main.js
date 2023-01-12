@@ -82,11 +82,12 @@ nuestros arrays argumentos.
 Recorremos los dos arrays argumentos hasta la longitud mayor de uno de los dos.
 Establecemos tambien mediante un par de bloques if que si cualquiera de los elementos que estemos
 recorriendo no existe en el array argumento le aplique un valor de 0, ya que se contempla
-que un array argumento puede ser mayor que otro y por tanto no existir y dar valor undefined.
+que un array argumento puede ser mayor que otro y por tanto no existir un elemento mostrar valor undefined.
 A continuación establecemos que en la misma posición que en los argumentos que está recorriendo 
 del array que queremos que resulte, realice una suma de los elementos de las posiciones que está
 recorriendo en los dos arrays argumentos.
-Finalmente le pedimos que nos devuelva por consola el array generado con esta función.
+Finalmente le pedimos que nos devuelva por consola el array generado con sus elementos formados cada uno por
+la suma de cada elemento de los arrays argumento.
 */ 
 
 
@@ -132,10 +133,10 @@ Explicación de la solución:
 Declaramos la función y le asignamos un argumento de tipo string.
 Declaramos una variable textReverse que será igual a realizarle una transformación de string a array
 a nuestro argumento(con el método .split('')), luego invertirmos el orden de los elementos de ese array
-(con el método .reveerse()) y por último unimos los elementos del array y los convirtimos en un string
+(con el método .reverse()) y por último unimos los elementos del array y los convirtimos en un string
 (con el método .join('')) así obtenemos un string con los caracteres en el orden inverso al argumento text.
-Después se comprueba que este resultado sea igual al argumento introducido y en función de eso se evalua
-como true o false y devuelve por consola el resultado.
+Después se comprueba que este resultado sea igual al argumento introducido y en función de esa condición
+se evalua como true o false y devuelve por consola el resultado.
 */ 
 
 
@@ -185,7 +186,7 @@ Declaramos dentro de la función una variable que será el resultado de:
      introducido (con el método .replaceAll()).
 
 Para finalizar visualizamos por consola el resultado de esta variable que será un string con 
-los elementos del argumento array separados por el argumento que hemos introducido.
+los elementos del argumento array separados por el segundo argumento que hemos introducido.
 */
 
 
@@ -219,8 +220,8 @@ EJERCICIO 5
 Explicación de la solución:
 
 Declaramos la función con un argumento que tiene que ser de tipo array.
-Dentro de nuestra función declaramos una variable tipo array para ir recogiendo los valores de la propiedad name de 
-los objetos que tienen el mismo valor en su propiedad id que el número de elemento 
+Dentro de nuestra función declaramos una variable tipo array para ir recogiendo como elementos los valores de la
+propiedad name de los objetos que tienen el mismo valor en su propiedad id que el número de elemento 
 que ocupan en el array argumento, y la dejamos vacia.
 Recorremos todos los elementos del argumento array y si la posición que ocupa el elemento que estamos recorriendo 
 en el argumento array coincide con el valor de la propiedad id de dicho elemento, entonces se añade el valor de la
