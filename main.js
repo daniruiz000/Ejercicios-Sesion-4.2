@@ -34,7 +34,7 @@ function sumaPrimos(){
 
     function esPrimo(numb){
         if (numb <= 1) {
-            primo = false;
+            return primo = false;
         }
         for (let i = 2; i < numb; i++) {
             if (numb % i === 0) {
@@ -77,12 +77,12 @@ EJERCICIO 2
 Explicación de la solución:
 
 Declaramos la función con dos argumentos que podremos introducir que sean de tipo Array.
-Declaramos una variable dentro de la función que usaremos como Array sumatorio de 
-muestros arrays argumentos.
+Declaramos una variable dentro de la función que usaremos como Array sumatorio de los elementos de 
+nuestros arrays argumentos.
 Recorremos los dos arrays argumentos hasta la longitud mayor de uno de los dos.
-Establecemos tambien mediante un par de bloques if que si cualquiera de los valores que estemos
+Establecemos tambien mediante un par de bloques if que si cualquiera de los elementos que estemos
 recorriendo no existe en el array argumento le aplique un valor de 0, ya que se contempla
-que un array argumento puede ser mayor que otro.
+que un array argumento puede ser mayor que otro y por tanto no existir y dar valor undefined.
 A continuación establecemos que en la misma posición que en los argumentos que está recorriendo 
 del array que queremos que resulte, realice una suma de los elementos de las posiciones que está
 recorriendo en los dos arrays argumentos.
@@ -131,9 +131,9 @@ Explicación de la solución:
 
 Declaramos la función y le asignamos un argumento de tipo string.
 Declaramos una variable textReverse que será igual a realizarle una transformación de string a array
-a nuestro argumento(con el método .split('')), luego invertirmos su orden (con el método .reveerse())
-y por último unimos los elementos del array y los convirtimos en un string (con el método .join(''))
-con los caracteres en el orden inverso al argumento text.
+a nuestro argumento(con el método .split('')), luego invertirmos el orden de los elementos de ese array
+(con el método .reveerse()) y por último unimos los elementos del array y los convirtimos en un string
+(con el método .join('')) así obtenemos un string con los caracteres en el orden inverso al argumento text.
 Después se comprueba que este resultado sea igual al argumento introducido y en función de eso se evalua
 como true o false y devuelve por consola el resultado.
 */ 
@@ -176,7 +176,7 @@ Declaramos la función y le asignamos dos argumentos:
 
     - El primero será para introducir un array.
     - El segundo para introducir el simbolo que queramos que haga de separador entre los elementos
-    del array cuando este formado nuestro string.
+    del array cuando estén formado nuestro string de salida.
 
 Declaramos dentro de la función una variable que será el resultado de:
 
@@ -185,7 +185,7 @@ Declaramos dentro de la función una variable que será el resultado de:
      introducido (con el método .replaceAll()).
 
 Para finalizar visualizamos por consola el resultado de esta variable que será un string con 
-los elementos de la variable array separados por el argumento que hemos introducido.
+los elementos del argumento array separados por el argumento que hemos introducido.
 */
 
 
@@ -219,12 +219,12 @@ EJERCICIO 5
 Explicación de la solución:
 
 Declaramos la función con un argumento que tiene que ser de tipo array.
-Declaramos una variable tipo array para ir recogiendo los valores de la propiedad name de 
+Dentro de nuestra función declaramos una variable tipo array para ir recogiendo los valores de la propiedad name de 
 los objetos que tienen el mismo valor en su propiedad id que el número de elemento 
-que ocupan en el array argumento, la dejamos vacia.
-Recorremos todos los elementos del argumento array y si el número de elemento que ocupa en el argumento array
-coincide con el valor de la propiedad id de dicho elemento, entonces se añade el valor de la propiedad name 
-de ese elemento qu estamos recorriendo como elemento a la variable array idVerify (mediante el método array.push())
+que ocupan en el array argumento, y la dejamos vacia.
+Recorremos todos los elementos del argumento array y si la posición que ocupa el elemento que estamos recorriendo 
+en el argumento array coincide con el valor de la propiedad id de dicho elemento, entonces se añade el valor de la
+propiedad name de ese elemento como elemento a la variable array idVerify (mediante el método array.push())
 conformando así nuestro array con el nombre de las personas en las que se da esa condición.
 Finalmente devuelve por consola dicho array. 
 */
