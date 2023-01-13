@@ -71,8 +71,10 @@ Finalmente devuelve por consola el resultado de sumatorio acompañado de un text
     Los arrays pueden tener diferente longitud.
 
 Ejemplo: 
+
     Entrada: [1,4,5,7] [2,1,5,1,1]
     Salida: [3,5,10,8,1]
+
 */
 
 
@@ -136,7 +138,7 @@ Ejemplo:
 let textForVerify ='oso';
 
 let verifyPalindromo = (text)=>{
-    let textReverse = text.split('').reverse().join('');
+    let textReverse = text.split().reverse().toString();
     let esPalindromo = text === textReverse;
     console.log(esPalindromo);
 };
@@ -148,20 +150,20 @@ verifyPalindromo(textForVerify);
 
 Declaramos la función y le asignamos un argumento de tipo string.
 Declaramos una variable textReverse que será igual a realizarle una transformación de string a array
-a nuestro argumento(con el método .split('')), luego invertirmos el orden de los elementos de ese array
+a nuestro argumento(con el método .split()), luego invertirmos el orden de los elementos de ese array
 (con el método .reverse()) y por último unimos los elementos del array y los convirtimos en un string
-(con el método .join('')) así obtenemos un string con los caracteres en el orden inverso al argumento text.
+(con el método .toString()) así obtenemos un string con los caracteres en el orden inverso al argumento text.
 Después se comprueba que este resultado sea igual al argumento introducido y en función de esa condición
 se evalua como true o false y devuelve por consola el resultado.
 
 
 Conclusión:
 
-Metodo split.reverse.join para pasar un string de forma inversa:
+Metodo split().reverse().toString() para pasar un string de forma inversa:
 
-        - Convertir el string en array (.split('')).
+        - Convertir el string en array (.split()).
         - Invertir el orden de los elementos del array (.reverse()).
-        - Convertir los elementos del array en string (.join('')).
+        - Convertir los elementos del array en string (.toString()).
 
 
 
@@ -208,7 +210,7 @@ Declaramos dentro de la función una variable que será el resultado de:
 
     - Primero transformar el argumento array a un string(con el método .toString()).
     - Despúes reemplazamos en este string el simbolo ',' por el argumento simbol que hemos
-     introducido (con el método .replaceAll()).
+    introducido (con el método .replaceAll()).
 
 Para finalizar visualizamos por consola el resultado de esta variable que será un string con 
 los elementos del argumento array separados por el segundo argumento que hemos introducido.
