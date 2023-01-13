@@ -79,7 +79,7 @@ Ejemplo:
 arrayA =[5,6,4,2,3];
 arrayB =[1,3,4,9,1,3,1];
 
-function sumaArrays (array1, array2){
+let sumaArrays = (array1, array2)=>{
     
     let sumaPosicion = [0];
     
@@ -139,7 +139,7 @@ let verifyPalindromo = (text)=>{
     let textReverse = text.split('').reverse().join('');
     let esPalindromo = text === textReverse;
     console.log(esPalindromo);
-}
+};
 
 verifyPalindromo(textForVerify);
 
@@ -186,10 +186,10 @@ Ejemplo:
 let arrayRequired =['Pedro', 'Gon', 'Luis', 'Fran'];
 let simbolRequired = '/';
 
-function strineando (array, simbol){
+let strineando = (array, simbol)=>{
     let arrayText = array.toString().replaceAll(',',simbol);
     console.log(arrayText);
-}
+};
 
 strineando(arrayRequired, simbolRequired);
 
@@ -235,7 +235,7 @@ Ejemplo:
 
 let arrayEntrada = [{id:2, name:'Pedro'},{id:1, name:'Juan'},{id:5, name:'Luis'},{id:3, name:'Gon'},{id:4, name:'Fran'} ];
 
-function verifyId (array){
+let verifyId = (array)=>{
 
     let idVerify = [];
 
@@ -245,7 +245,7 @@ function verifyId (array){
         }
     }
     console.log(idVerify);
-}
+};
 
 verifyId(arrayEntrada);
 
