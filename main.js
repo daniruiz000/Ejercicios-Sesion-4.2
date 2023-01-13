@@ -188,7 +188,7 @@ let simbolRequired = '/';
 
 let strineando = (array, simbol)=>{
     let arrayText = array.toString().replaceAll(',',simbol);
-    console.log(arrayText);
+    console.log(arrayText + ' ' + 'asi obtenemos nuestro array convertido a tipo ' + typeof(arrayText));
 };
 
 strineando(arrayRequired, simbolRequired);
